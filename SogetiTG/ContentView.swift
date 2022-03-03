@@ -11,7 +11,11 @@ import CoreData
 struct ContentView: View {
     
     var body: some View {
-        Text("test")
+        VStack{
+            Text("test")
+            Text("test 2")
+        }
+        
     }
 }
 
