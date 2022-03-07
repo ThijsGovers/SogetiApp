@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D346E69027D619EC006F838D /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E68F27D619EC006F838D /* NewsView.swift */; };
+		D346E69227D619FB006F838D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E69127D619FB006F838D /* HomeView.swift */; };
+		D346E69427D61A36006F838D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E69327D61A36006F838D /* ProfileView.swift */; };
 		D36A8D2527D0FC25003AD26A /* SogetiTGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A8D2427D0FC25003AD26A /* SogetiTGApp.swift */; };
 		D36A8D2727D0FC25003AD26A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A8D2627D0FC25003AD26A /* ContentView.swift */; };
 		D36A8D2927D0FC28003AD26A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36A8D2827D0FC28003AD26A /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D346E68F27D619EC006F838D /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		D346E69127D619FB006F838D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D346E69327D61A36006F838D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D36A8D2127D0FC25003AD26A /* SogetiTG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SogetiTG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36A8D2427D0FC25003AD26A /* SogetiTGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SogetiTGApp.swift; sourceTree = "<group>"; };
 		D36A8D2627D0FC25003AD26A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D346E68E27D61981006F838D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D346E68F27D619EC006F838D /* NewsView.swift */,
+				D346E69127D619FB006F838D /* HomeView.swift */,
+				D346E69327D61A36006F838D /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D36A8D1827D0FC25003AD26A = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +71,7 @@
 		D36A8D2327D0FC25003AD26A /* SogetiTG */ = {
 			isa = PBXGroup;
 			children = (
+				D346E68E27D61981006F838D /* Views */,
 				D36A8D2427D0FC25003AD26A /* SogetiTGApp.swift */,
 				D36A8D2627D0FC25003AD26A /* ContentView.swift */,
 				D36A8D2827D0FC28003AD26A /* Assets.xcassets */,
@@ -146,6 +163,9 @@
 				D36A8D2E27D0FC28003AD26A /* Persistence.swift in Sources */,
 				D36A8D2727D0FC25003AD26A /* ContentView.swift in Sources */,
 				D36A8D2527D0FC25003AD26A /* SogetiTGApp.swift in Sources */,
+				D346E69227D619FB006F838D /* HomeView.swift in Sources */,
+				D346E69027D619EC006F838D /* NewsView.swift in Sources */,
+				D346E69427D61A36006F838D /* ProfileView.swift in Sources */,
 				D36A8D3127D0FC28003AD26A /* SogetiTG.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

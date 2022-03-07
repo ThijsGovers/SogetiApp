@@ -11,11 +11,14 @@ import CoreData
 struct ContentView: View {
     
     var body: some View {
-        VStack{
-            Text("test")
-            Text("test 2")
-        }
-        
+        ZStack{
+            Color("LightGreen")
+            
+            VStack{
+                Text("test")
+                Text("test 2")
+            }
+        }.ignoresSafeArea()
     }
 }
 
