@@ -9,16 +9,28 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    
     var body: some View {
-        ZStack{
-            Color("LightGreen")
             
-            VStack{
-                Text("test")
-                Text("test 2")
-            }
-        }.ignoresSafeArea()
+        TabView{
+                NewsView()
+                    .tabItem() {
+                        Image(systemName: "exclamationmark.bubble.fill")
+                        Text("Niews")
+                    }
+                
+                HomeView()
+                    .tabItem() {
+                        Image(systemName: "house")
+                        Text("Home")
+                    }
+                
+                ProfileView()
+                    .tabItem() {
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
+            
+        }
     }
 }
 
