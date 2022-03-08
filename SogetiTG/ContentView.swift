@@ -6,30 +6,34 @@
 //
 
 import SwiftUI
-import CoreData
+//import CoreData
+
+enum Tabs : String {
+    case news
+    case home
+    case profile
+}
 
 struct ContentView: View {
+    
+    @State var selectedTab: Tabs = .home
+    
     var body: some View {
-            
-        TabView{
-                NewsView()
-                    .tabItem() {
-                        Image(systemName: "exclamationmark.bubble.fill")
-                        Text("Niews")
-                    }
+        NavigationView{
+            TabView(selection: $selectedTab) {
+                    NewsView()
+                        .tabItem {Label("Nieuws", systemImage: "exclamationmark.bubble.fill") }
+                        .tag(Tabs.news)
+                    
+                    HomeView()
+                        .tabItem {Label("Home", systemImage: "house") }
+                        .tag(Tabs.home)
+                    
+                    ProfileView()
+                        .tabItem {Label("Profiel", systemImage: "person") }
+                        .tag(Tabs.profile)
                 
-                HomeView()
-                    .tabItem() {
-                        Image(systemName: "house")
-                        Text("Home")
-                    }
-                
-                ProfileView()
-                    .tabItem() {
-                        Image(systemName: "person")
-                        Text("Profile")
-                    }
-            
+            }.navigationTitle(selectedTab.rawValue.capitalized)
         }
     }
 }

@@ -11,7 +11,7 @@ struct ProfileView: View {
     var body: some View {
         ZStack{
             Color("LightGreen")
-                Text("Hello, World!")
+                Text("Profiel")
         }.ignoresSafeArea()
     }
 }

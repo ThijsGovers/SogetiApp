@@ -12,8 +12,7 @@ struct HomeView: View {
         ZStack{
             Color("LightGreen")
                 VStack{
-                    Text("Hello, World!")
-                    Text("ff testen")
+                    Text("Beginscherm")
                 }
         }.ignoresSafeArea()
     }
