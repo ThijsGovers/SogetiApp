@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30BB9F227D79509000B34EE /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BB9F127D79509000B34EE /* HelpView.swift */; };
+		D30BB9F427D79962000B34EE /* DonerenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BB9F327D79962000B34EE /* DonerenView.swift */; };
+		D30BB9F627D79978000B34EE /* KindOpgevenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BB9F527D79978000B34EE /* KindOpgevenView.swift */; };
+		D30BB9F827D7998B000B34EE /* VrijwilligerOpgevenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BB9F727D7998B000B34EE /* VrijwilligerOpgevenView.swift */; };
 		D346E69027D619EC006F838D /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E68F27D619EC006F838D /* NewsView.swift */; };
 		D346E69227D619FB006F838D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E69127D619FB006F838D /* HomeView.swift */; };
 		D346E69427D61A36006F838D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E69327D61A36006F838D /* ProfileView.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D30BB9F127D79509000B34EE /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		D30BB9F327D79962000B34EE /* DonerenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonerenView.swift; sourceTree = "<group>"; };
+		D30BB9F527D79978000B34EE /* KindOpgevenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindOpgevenView.swift; sourceTree = "<group>"; };
+		D30BB9F727D7998B000B34EE /* VrijwilligerOpgevenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrijwilligerOpgevenView.swift; sourceTree = "<group>"; };
 		D346E68F27D619EC006F838D /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		D346E69127D619FB006F838D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D346E69327D61A36006F838D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -42,6 +50,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D30BB9F027D78988000B34EE /* Doneren */ = {
+			isa = PBXGroup;
+			children = (
+				D30BB9F127D79509000B34EE /* HelpView.swift */,
+				D30BB9F327D79962000B34EE /* DonerenView.swift */,
+				D30BB9F527D79978000B34EE /* KindOpgevenView.swift */,
+				D30BB9F727D7998B000B34EE /* VrijwilligerOpgevenView.swift */,
+			);
+			path = Doneren;
+			sourceTree = "<group>";
+		};
 		D346E68E27D61981006F838D /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +93,7 @@
 				D346E68E27D61981006F838D /* Views */,
 				D36A8D2427D0FC25003AD26A /* SogetiTGApp.swift */,
 				D36A8D2627D0FC25003AD26A /* ContentView.swift */,
+				D30BB9F027D78988000B34EE /* Doneren */,
 				D36A8D2827D0FC28003AD26A /* Assets.xcassets */,
 				D36A8D2D27D0FC28003AD26A /* Persistence.swift */,
 				D36A8D2F27D0FC28003AD26A /* SogetiTG.xcdatamodeld */,
@@ -163,10 +183,14 @@
 				D36A8D2E27D0FC28003AD26A /* Persistence.swift in Sources */,
 				D36A8D2727D0FC25003AD26A /* ContentView.swift in Sources */,
 				D36A8D2527D0FC25003AD26A /* SogetiTGApp.swift in Sources */,
+				D30BB9F427D79962000B34EE /* DonerenView.swift in Sources */,
 				D346E69227D619FB006F838D /* HomeView.swift in Sources */,
+				D30BB9F627D79978000B34EE /* KindOpgevenView.swift in Sources */,
 				D346E69027D619EC006F838D /* NewsView.swift in Sources */,
+				D30BB9F227D79509000B34EE /* HelpView.swift in Sources */,
 				D346E69427D61A36006F838D /* ProfileView.swift in Sources */,
 				D36A8D3127D0FC28003AD26A /* SogetiTG.xcdatamodeld in Sources */,
+				D30BB9F827D7998B000B34EE /* VrijwilligerOpgevenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,7 @@ struct ContentView: View {
                         .tabItem {Label("Profiel", systemImage: "person") }
                         .tag(Tabs.profile)
                 
-            }.navigationTitle(selectedTab.rawValue.capitalized)
+            }.navigationBarTitle(selectedTab.rawValue.capitalized , displayMode: .inline)
         }
     }
 }

@@ -11,9 +11,15 @@ struct HomeView: View {
     var body: some View {
         ZStack{
             Color("LightGreen")
-                VStack{
-                    Text("Beginscherm")
-                }
+            
+            NavigationLink(destination: HelpView()) {
+                Text("Ik wil helpen!")
+                    .padding()
+                    .padding(.horizontal, 80)
+                    .background(Color(.white))
+                    .cornerRadius(20)
+            }
+            
         }.ignoresSafeArea()
     }
 }
