@@ -34,6 +34,7 @@ struct ContentView: View {
                         .tag(Tabs.profile)
                 
             }.navigationBarTitle(selectedTab.rawValue.capitalized , displayMode: .inline)
+                .accentColor(Color("AccentPurple"))
         }
     }
 }

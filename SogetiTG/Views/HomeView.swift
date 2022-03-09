@@ -14,6 +14,7 @@ struct HomeView: View {
             
             NavigationLink(destination: HelpView()) {
                 Text("Ik wil helpen!")
+                    .foregroundColor(Color("TextColor"))
                     .padding()
                     .padding(.horizontal, 80)
                     .background(Color(.white))
