@@ -7,14 +7,25 @@
 
 import SwiftUI
 
-struct ButtonView: View {
+struct ButtonView<Destination>: View where Destination: View {
+    let destination: Destination
+    let text: String
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationLink(destination: destination) {
+            HStack(alignment: .center, spacing: 0) {
+                Spacer()
+                Text(text)
+                Spacer()
+            }.padding()
+            .background(Color (.white))
+            .cornerRadius(20)
+        }.padding(.horizontal, 40)
     }
 }
 
-struct ButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonView()
-    }
-}
+//struct ButtonView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ButtonView()
+//    }
+//}

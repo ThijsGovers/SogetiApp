@@ -14,35 +14,14 @@ struct HelpView: View {
             Color("LightGreen")
             
             VStack{
-                NavigationLink(destination: DonerenView()) {
-                    HStack(alignment: .center, spacing: 0) {
-                        Spacer()
-                        Text("Doneren")
-                        Spacer()
-                    }.padding()
-                        .padding(.horizontal, 80)
-                        .background(Color(.white))
-                        .cornerRadius(20)
-                }.padding(.horizontal, 40)
+                ButtonView(destination: DonerenView(), text: "Doneren")
                 
-                NavigationLink(destination: VrijwilligerOpgevenView()) {
-                    Text("Vrijwilliger opgeven")
-                        .padding()
-                        .padding(.horizontal, 80)
-                        .background(Color(.white))
-                        .cornerRadius(20)
-                }
+                ButtonView(destination: VrijwilligerOpgevenView(), text: "Vrijwilliger opgeven")
                 
-                NavigationLink(destination: KindOpgevenView()) {
-                    Text("Kind opgeven")
-                        .padding()
-                        .padding(.horizontal, 80)
-                        .background(Color(.white))
-                        .cornerRadius(20)
-                }
+                ButtonView(destination: KindOpgevenView(), text: "Kind opgeven")
             }
-            
         }.ignoresSafeArea()
+        
     }
 }
 
