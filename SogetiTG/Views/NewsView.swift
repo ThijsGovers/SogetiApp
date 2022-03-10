@@ -11,7 +11,10 @@ struct NewsView: View {
     var body: some View {
         ZStack{
             Color("LightGreen")
+            VStack{
                 Text("Nieuws scherm")
+                Text("Dit scherm zal buiten de opdracht vallen")
+            }
         }.ignoresSafeArea()
     }
 }
