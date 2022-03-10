@@ -15,12 +15,15 @@ struct HelpView: View {
             
             VStack{
                 NavigationLink(destination: DonerenView()) {
-                    Text("Doneren")
-                        .padding()
+                    HStack(alignment: .center, spacing: 0) {
+                        Spacer()
+                        Text("Doneren")
+                        Spacer()
+                    }.padding()
                         .padding(.horizontal, 80)
                         .background(Color(.white))
                         .cornerRadius(20)
-                }
+                }.padding(.horizontal, 40)
                 
                 NavigationLink(destination: VrijwilligerOpgevenView()) {
                     Text("Vrijwilliger opgeven")
