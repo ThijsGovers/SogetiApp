@@ -35,6 +35,11 @@ struct ContentView: View {
                 
             }.navigationBarTitle(selectedTab.rawValue.capitalized , displayMode: .inline)
                 .accentColor(Color("AccentPurple"))
+                .toolbar{
+                    Button("Instellingen") {
+                        print("saved")
+                    }
+                }
         }
     }
 }
