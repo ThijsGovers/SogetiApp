@@ -34,10 +34,11 @@ struct ContentView: View {
                         .tag(Tabs.profile)
                 
             }.navigationBarTitle(selectedTab.rawValue.capitalized , displayMode: .inline)
-                .accentColor(Color("AccentPurple"))
                 .toolbar{
-                    Button("Instellingen") {
+                    Button {
                         print("saved")
+                    } label: {
+                        Label("save", systemImage: "slider.horizontal.3")
                     }
                 }
         }

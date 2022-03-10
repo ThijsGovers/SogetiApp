@@ -13,7 +13,7 @@ struct HelpView: View {
         ZStack{
             Color("LightGreen")
             
-            VStack{
+            VStack(spacing: 20){
                 ButtonView(destination: DonerenView(), text: "Doneren")
                 
                 ButtonView(destination: VrijwilligerOpgevenView(), text: "Vrijwilliger opgeven")
