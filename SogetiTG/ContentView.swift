@@ -19,7 +19,7 @@ struct ContentView: View {
     @State var selectedTab: Tabs = .home
     
     var body: some View {
-        NavigationView{
+        
             TabView(selection: $selectedTab) {
                     NewsView()
                         .tabItem {Label("Nieuws", systemImage: "exclamationmark.bubble.fill") }
@@ -32,16 +32,8 @@ struct ContentView: View {
                     ProfileView()
                         .tabItem {Label("Profiel", systemImage: "person") }
                         .tag(Tabs.profile)
+            }
                 
-            }.navigationBarTitle(selectedTab.rawValue.capitalized , displayMode: .inline)
-                .toolbar{
-                    Button {
-                        print("saved")
-                    } label: {
-                        Label("save", systemImage: "slider.horizontal.3")
-                    }
-                }
-        }
     }
 }
 

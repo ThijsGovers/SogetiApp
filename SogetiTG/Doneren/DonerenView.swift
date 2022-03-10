@@ -9,9 +9,10 @@ import SwiftUI
 
 struct DonerenView: View {
     var body: some View {
-        
-        ZStack{
-            Color("LightGreen")
+        NavigationView{
+            ZStack{
+                Color("LightGreen")
+            }.navigationBarTitle("Doneren", displayMode: .inline)
         }.ignoresSafeArea()
     }
 }

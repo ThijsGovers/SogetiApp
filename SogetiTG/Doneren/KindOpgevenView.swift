@@ -9,8 +9,10 @@ import SwiftUI
 
 struct KindOpgevenView: View {
     var body: some View {
-        ZStack{
-            Color("LightGreen")
+        NavigationView{
+            ZStack{
+                Color("LightGreen")
+            }.navigationBarTitle("Kind opgeven", displayMode: .inline)
         }.ignoresSafeArea()
     }
 }

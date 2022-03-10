@@ -9,12 +9,14 @@ import SwiftUI
 
 struct NewsView: View {
     var body: some View {
-        ZStack{
-            Color("LightGreen")
-            VStack{
-                Text("Nieuws scherm")
-                Text("Dit scherm zal buiten de opdracht vallen")
-            }
+        NavigationView{
+            ZStack{
+                Color("LightGreen")
+                VStack{
+                    Text("Nieuws scherm")
+                    Text("Dit scherm zal buiten de opdracht vallen")
+                }
+            }.navigationBarTitle("Nieuws")
         }.ignoresSafeArea()
     }
 }

@@ -9,8 +9,10 @@ import SwiftUI
 
 struct VrijwilligerOpgevenView: View {
     var body: some View {
-        ZStack{
-            Color("LightGreen")
+        NavigationView{
+            ZStack{
+                Color("LightGreen")
+            }.navigationBarTitle("Vrijwilliger opgeven", displayMode: .inline)
         }.ignoresSafeArea()
     }
 }

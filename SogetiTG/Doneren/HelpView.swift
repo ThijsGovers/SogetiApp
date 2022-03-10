@@ -9,17 +9,18 @@ import SwiftUI
 
 struct HelpView: View {
     var body: some View {
-        
-        ZStack{
-            Color("LightGreen")
+        NavigationView{
+            ZStack{
+                Color("LightGreen")
             
-            VStack(spacing: 20){
-                ButtonView(destination: DonerenView(), text: "Doneren")
-                
-                ButtonView(destination: VrijwilligerOpgevenView(), text: "Vrijwilliger opgeven")
-                
-                ButtonView(destination: KindOpgevenView(), text: "Kind opgeven")
-            }
+                VStack(spacing: 20){
+                    ButtonView(destination: DonerenView(), text: "Doneren")
+                    
+                    ButtonView(destination: VrijwilligerOpgevenView(), text: "Vrijwilliger opgeven")
+                    
+                    ButtonView(destination: KindOpgevenView(), text: "Kind opgeven")
+                }
+            }.navigationBarTitle("Help mee!")
         }.ignoresSafeArea()
         
     }

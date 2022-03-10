@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        ZStack{
-            Color("LightGreen")
+        NavigationView{
+            ZStack{
+                Color("LightGreen")
                 Text("Profiel")
+            }.navigationBarTitle("Profiel")
         }.ignoresSafeArea()
     }
 }
