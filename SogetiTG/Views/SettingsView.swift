@@ -10,6 +10,8 @@ import SwiftUI
 struct SettingsView: View {
     @State private var naam = ""
     @State private var woonplaats = ""
+    @State private var email = ""
+    @State private var telefoon = ""
     
     var body: some View {
         NavigationView{
@@ -17,6 +19,8 @@ struct SettingsView: View {
                 Section(header: Text("Gegevens")){
                     TextField("Naam", text: $naam)
                     TextField("Woonplaats", text: $woonplaats)
+                    TextField("E-mail", text: $email)
+                    TextField("Telefoon nummer", text: $telefoon)
                 }
             }
         }.navigationBarTitle("Instellingen")
