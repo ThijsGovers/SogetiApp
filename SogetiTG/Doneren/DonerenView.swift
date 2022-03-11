@@ -13,6 +13,35 @@ struct DonerenView: View {
             ZStack{
                 Color("LightGreen")
                 
+                VStack{
+                    Text("Wat wilt u doneren?")
+                        .font(.title)
+                        .foregroundColor(Color("TextColor"))
+                        .padding(.bottom, 50)
+                    
+                    HStack{
+                        Spacer()
+                        VStack{
+                            Image(systemName: "eurosign.circle")
+                                .font(.system(size: 50))
+                                .padding(30)
+                                .background(Color.white)
+                                .cornerRadius(20)
+                                Text("Geld")
+                        }
+                        Spacer()
+                        VStack{
+                            Image(systemName: "gift")
+                                .font(.system(size: 50))
+                                .padding(30)
+                                .background(Color.white)
+                                .cornerRadius(20)
+                            Text("Speelgoed")
+                        }
+                        Spacer()
+                    }
+                }
+                
             }.navigationBarTitle("Doneren", displayMode: .inline)
         }.ignoresSafeArea()
     }

@@ -17,7 +17,6 @@ struct SettingsView: View {
                 Section(header: Text("Gegevens")){
                     TextField("Naam", text: $naam)
                     TextField("Woonplaats", text: $woonplaats)
-                    TextField("Naam", text: $naam)
                 }
             }
         }.navigationBarTitle("Instellingen")
