@@ -24,7 +24,7 @@ struct HomeView: View {
             }.navigationBarTitle("Home")
             .toolbar{
                 Button {
-                    print("saved")
+//                    NavigationLink(destination: HelpView())
                 } label: {
                     Label("save", systemImage: "slider.horizontal.3")
                 }

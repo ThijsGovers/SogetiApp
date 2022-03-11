@@ -12,6 +12,7 @@ struct DonerenView: View {
         NavigationView{
             ZStack{
                 Color("LightGreen")
+                
             }.navigationBarTitle("Doneren", displayMode: .inline)
         }.ignoresSafeArea()
     }
