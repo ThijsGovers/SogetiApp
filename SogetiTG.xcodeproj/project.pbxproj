@@ -14,6 +14,8 @@
 		D346E69027D619EC006F838D /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E68F27D619EC006F838D /* NewsView.swift */; };
 		D346E69227D619FB006F838D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E69127D619FB006F838D /* HomeView.swift */; };
 		D346E69427D61A36006F838D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E69327D61A36006F838D /* ProfileView.swift */; };
+		D349C02827DF4F7900B7ED5A /* GeldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349C02727DF4F7900B7ED5A /* GeldView.swift */; };
+		D349C02A27DF4F9000B7ED5A /* SpeelgoedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349C02927DF4F9000B7ED5A /* SpeelgoedView.swift */; };
 		D36A8D2527D0FC25003AD26A /* SogetiTGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A8D2427D0FC25003AD26A /* SogetiTGApp.swift */; };
 		D36A8D2727D0FC25003AD26A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A8D2627D0FC25003AD26A /* ContentView.swift */; };
 		D36A8D2927D0FC28003AD26A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36A8D2827D0FC28003AD26A /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		D346E68F27D619EC006F838D /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		D346E69127D619FB006F838D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D346E69327D61A36006F838D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D349C02727DF4F7900B7ED5A /* GeldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeldView.swift; sourceTree = "<group>"; };
+		D349C02927DF4F9000B7ED5A /* SpeelgoedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeelgoedView.swift; sourceTree = "<group>"; };
 		D36A8D2127D0FC25003AD26A /* SogetiTG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SogetiTG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36A8D2427D0FC25003AD26A /* SogetiTGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SogetiTGApp.swift; sourceTree = "<group>"; };
 		D36A8D2627D0FC25003AD26A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				D30BB9F327D79962000B34EE /* DonerenView.swift */,
 				D30BB9F527D79978000B34EE /* KindOpgevenView.swift */,
 				D30BB9F727D7998B000B34EE /* VrijwilligerOpgevenView.swift */,
+				D349C02727DF4F7900B7ED5A /* GeldView.swift */,
+				D349C02927DF4F9000B7ED5A /* SpeelgoedView.swift */,
 			);
 			path = Doneren;
 			sourceTree = "<group>";
@@ -191,9 +197,11 @@
 				D3B758B427DA2EA400ECCD30 /* ButtonView.swift in Sources */,
 				D36A8D2527D0FC25003AD26A /* SogetiTGApp.swift in Sources */,
 				D30BB9F427D79962000B34EE /* DonerenView.swift in Sources */,
+				D349C02A27DF4F9000B7ED5A /* SpeelgoedView.swift in Sources */,
 				D346E69227D619FB006F838D /* HomeView.swift in Sources */,
 				D30BB9F627D79978000B34EE /* KindOpgevenView.swift in Sources */,
 				D346E69027D619EC006F838D /* NewsView.swift in Sources */,
+				D349C02827DF4F7900B7ED5A /* GeldView.swift in Sources */,
 				D30BB9F227D79509000B34EE /* HelpView.swift in Sources */,
 				D346E69427D61A36006F838D /* ProfileView.swift in Sources */,
 				D36A8D3127D0FC28003AD26A /* SogetiTG.xcdatamodeld in Sources */,
