@@ -14,6 +14,7 @@ struct DonerenView: View {
                 Color("LightGreen")
                 
                 VStack{
+                    Spacer()
                     Text("Wat wilt u doneren?")
                         .font(.title)
                         .foregroundColor(Color("TextColor"))
@@ -40,6 +41,9 @@ struct DonerenView: View {
                         }
                         Spacer()
                     }
+                    Spacer()
+                    VolgendeView(destination: GeldView(), text: "Volgende")
+                    Spacer()
                 }
                 
             }.navigationBarTitle("Doneren", displayMode: .inline)

@@ -21,7 +21,7 @@ struct HomeView: View {
                         .background(Color(.white))
                         .cornerRadius(20)
                 }
-            }.navigationBarTitle("Home")
+            }.navigationBarTitle("Fairness")
             .toolbar{
                 Button {
 //                    NavigationLink(destination: HelpView())
