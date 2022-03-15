@@ -22,15 +22,19 @@ struct GeldView: View {
                     
                         HStack{
                             Spacer()
+                            Text("€").font(.title)
                             TextField("Bedrag", text: $bedrag)
                                 .frame(width: 100, height: 100, alignment: .center)
                                 .multilineTextAlignment(TextAlignment.center)
                                 .padding()
                                 .background(Color.white)
+                                .cornerRadius(20)
                             Spacer()
                         }.padding(.horizontal, 20)
+                    
+                    VolgendeView(destination: BedanktView(), text: "Doneren")
                 }
-            }.navigationBarTitle("Doneren")
+            }.navigationBarTitle("Doneren", displayMode: .inline)
         }.ignoresSafeArea()
     }
 }

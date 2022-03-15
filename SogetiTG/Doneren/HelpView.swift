@@ -20,7 +20,7 @@ struct HelpView: View {
                     
                     ButtonView(destination: KindOpgevenView(), text: "Kind opgeven")
                 }
-            }.navigationBarTitle("Help mee!")
+            }.navigationBarTitle("Help mee!", displayMode: .inline)
         }.ignoresSafeArea()
         
     }

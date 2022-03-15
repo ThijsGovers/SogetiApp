@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct SpeelgoedView: View {
+    @State private var speelgoed = ""
+    
     var body: some View {
         NavigationView{
             ZStack{
                 Color("LightGreen")
                 VStack{
-                    Text("Nieuws scherm")
-                    Text("Dit scherm zal buiten de opdracht vallen")
+                    Text("Wat wilt u doneren?")
+                    TextField("Voorwerp", text: $speelgoed)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(20)
+                        .padding()
+                        
+                    
                 }
-            }.navigationBarTitle("Nieuws")
+            }.navigationBarTitle("Doneren", displayMode: .inline)
         }.ignoresSafeArea()
     }
 }
