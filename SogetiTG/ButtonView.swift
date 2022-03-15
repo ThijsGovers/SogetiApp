@@ -18,7 +18,8 @@ struct ButtonView<Destination>: View where Destination: View {
                 Text(text)
                 Spacer()
             }.padding()
-            .background(Color (.white))
+            .foregroundColor(Color("TextColor"))
+            .background(Color("ColorWhite"))
             .cornerRadius(20)
         }.padding(.horizontal, 40)
     }

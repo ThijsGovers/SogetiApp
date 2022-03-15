@@ -16,6 +16,7 @@ struct BedanktView: View {
                     Spacer(minLength: 300)
                     Text("Bedankt voor uw donatie!")
                         .font(.largeTitle)
+                        .foregroundColor(Color("TextColor"))
                         .padding(30)
                     Spacer()
                     VolgendeView(destination: HomeView(), text: "Hoofdpagina")

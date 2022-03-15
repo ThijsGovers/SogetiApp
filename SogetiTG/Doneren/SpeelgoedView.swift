@@ -16,6 +16,9 @@ struct SpeelgoedView: View {
                 Color("LightGreen")
                 VStack{
                     Text("Wat wilt u doneren?")
+                        .font(.title2)
+                        .foregroundColor(Color("TextColor"))
+                    
                     TextField("Voorwerp", text: $speelgoed)
                         .padding()
                         .background(Color.white)

@@ -13,15 +13,8 @@ struct HomeView: View {
             ZStack{
                 Color("LightGreen")
             
-                NavigationLink(destination: HelpView()) {
-                    Text("Ik wil helpen!")
-                        .foregroundColor(Color("TextColor"))
-                        .padding()
-                        .padding(.horizontal, 80)
-                        .background(Color(.white))
-                        .cornerRadius(20)
-                }
-            }.navigationBarTitle("Fairness")
+                ButtonView(destination: HelpView(), text: "Ik wil helpen!")
+            }.navigationBarTitle("App Naam")
             .toolbar{
                 Button {
 //                    NavigationLink(destination: HelpView())

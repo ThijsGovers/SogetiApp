@@ -16,7 +16,7 @@ struct DonerenView: View {
                 VStack{
                     Spacer()
                     Text("Wat wilt u doneren?")
-                        .font(.title)
+                        .font(.title2)
                         .foregroundColor(Color("TextColor"))
                         .padding(.bottom, 50)
                     
@@ -26,18 +26,22 @@ struct DonerenView: View {
                             Image(systemName: "eurosign.circle")
                                 .font(.system(size: 50))
                                 .padding(30)
-                                .background(Color.white)
+                                .foregroundColor(Color("AccentColor"))
+                                .background(Color("ColorWhite"))
                                 .cornerRadius(20)
                                 Text("Geld")
+                                .foregroundColor(Color("TextColor"))
                         }
                         Spacer()
                         VStack{
                             Image(systemName: "gift")
                                 .font(.system(size: 50))
                                 .padding(30)
-                                .background(Color.white)
+                                .foregroundColor(Color("AccentColor"))
+                                .background(Color("ColorWhite"))
                                 .cornerRadius(20)
                             Text("Speelgoed")
+                                .foregroundColor(Color("TextColor"))
                         }
                         Spacer()
                     }

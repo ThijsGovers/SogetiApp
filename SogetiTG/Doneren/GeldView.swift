@@ -16,13 +16,14 @@ struct GeldView: View {
                 Color("LightGreen")
                 VStack{
                     Text("Hoeveel wilt u doneren?")
-                        .font(.title)
+                        .font(.title2)
                         .foregroundColor(Color("TextColor"))
                         .padding(.bottom, 50)
                     
                         HStack{
                             Spacer()
-                            Text("€").font(.title)
+                            Text("€").font(.largeTitle)
+                                .foregroundColor(Color("TextColor"))
                             TextField("Bedrag", text: $bedrag)
                                 .frame(width: 100, height: 100, alignment: .center)
                                 .multilineTextAlignment(TextAlignment.center)
