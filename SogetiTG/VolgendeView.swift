@@ -19,7 +19,7 @@ struct VolgendeView<Destination>: View where Destination: View {
                 Spacer()
             }
             .padding()
-            .background(Color.purple)
+            .background(Color("AccentPurple"))
             .cornerRadius(30)
             .foregroundColor(Color.white)
         }.padding(.horizontal, 80)
