@@ -8,10 +8,58 @@
 import SwiftUI
 
 struct KindOpgevenView: View {
+    @State private var naamKind = ""
+    @State private var leeftijdKind = ""
+    @State private var adres1 = ""
+    @State private var adres2 = ""
+    
     var body: some View {
         NavigationView{
             ZStack{
                 Color("LightGreen")
+                
+                VStack{
+                    Text("Naam van het kind")
+                    TextField("Voornaam en achternaam", text: $naamKind)
+                        .padding()
+                        .background(Color("ColorWhite"))
+                        .cornerRadius(20)
+                        .padding()
+                    
+                    Text("Leeftijd van het kind")
+                    TextField("Leeftijd", text: $leeftijdKind)
+                        .padding()
+                        .background(Color("ColorWhite"))
+                        .cornerRadius(20)
+                        .padding()
+                    
+                    Text("Geslacht")
+                    HStack{
+                        Image(systemName: "Circle.fill").foregroundColor(.white).font(.title2)
+                            .padding()
+                            .background(Color("ColorWhite"))
+                            .cornerRadius(20)
+                            .padding()
+                        Image(systemName: "Circle.fill").foregroundColor(.white).font(.title2)
+                            .padding()
+                            .background(Color("ColorWhite"))
+                            .cornerRadius(20)
+                            .padding()
+                    }
+                    
+                    Text("Woonplaats van het kind")
+                    TextField("Adres", text: $adres1)
+                        .padding()
+                        .background(Color("ColorWhite"))
+                        .cornerRadius(20)
+                        .padding()
+                    TextField("Eventueel tweede adres", text: $adres2)
+                        .padding()
+                        .background(Color("ColorWhite"))
+                        .cornerRadius(20)
+                        .padding()
+                }
+                
             }.navigationBarTitle("Kind opgeven", displayMode: .inline)
         }.ignoresSafeArea()
     }

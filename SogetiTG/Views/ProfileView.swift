@@ -15,13 +15,17 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationView{
-            Form{
-                Section(header: Text("Gegevens")){
-                    TextField("Naam", text: $naam)
-                    TextField("Woonplaats", text: $woonplaats)
-                    TextField("E-mail", text: $email)
-                    TextField("Telefoon nummer", text: $telefoon)
+            VStack{
+                Form{
+                    Section(header: Text("Gegevens")){
+                        TextField("Naam", text: $naam)
+                        TextField("Woonplaats", text: $woonplaats)
+                        TextField("E-mail", text: $email)
+                        TextField("Telefoon nummer", text: $telefoon)
+                    }
                 }
+                
+                VolgendeView(destination: KindOpgevenView(), text: "Kind opgeven")
             }
         }.navigationBarTitle("Profiel")
     }

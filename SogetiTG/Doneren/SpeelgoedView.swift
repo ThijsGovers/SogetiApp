@@ -22,7 +22,7 @@ struct SpeelgoedView: View {
                     
                     TextField("Voorwerp", text: $speelgoed)
                         .padding()
-                        .background(Color.white)
+                        .background(Color("ColorWhite"))
                         .cornerRadius(20)
                         .padding()
                     Spacer()
