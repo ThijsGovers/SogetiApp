@@ -20,6 +20,8 @@ struct KindOpgevenView: View {
                 
                 VStack{
                     Text("Naam van het kind")
+                        .font(.title2)
+                        .foregroundColor(Color("TextColor"))
                     TextField("Voornaam en achternaam", text: $naamKind)
                         .padding()
                         .background(Color("ColorWhite"))
@@ -27,6 +29,8 @@ struct KindOpgevenView: View {
                         .padding()
                     
                     Text("Leeftijd van het kind")
+                        .font(.title2)
+                        .foregroundColor(Color("TextColor"))
                     TextField("Leeftijd", text: $leeftijdKind)
                         .padding()
                         .background(Color("ColorWhite"))
@@ -34,6 +38,8 @@ struct KindOpgevenView: View {
                         .padding()
                     
                     Text("Geslacht")
+                        .font(.title2)
+                        .foregroundColor(Color("TextColor"))
                     HStack{
                         Image(systemName: "Circle.fill").foregroundColor(.white).font(.title2)
                             .padding()
@@ -48,6 +54,8 @@ struct KindOpgevenView: View {
                     }
                     
                     Text("Woonplaats van het kind")
+                        .font(.title2)
+                        .foregroundColor(Color("TextColor"))
                     TextField("Adres", text: $adres1)
                         .padding()
                         .background(Color("ColorWhite"))

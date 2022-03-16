@@ -26,6 +26,7 @@
 		D36A8D3127D0FC28003AD26A /* SogetiTG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D36A8D2F27D0FC28003AD26A /* SogetiTG.xcdatamodeld */; };
 		D3B758B427DA2EA400ECCD30 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B758B327DA2EA400ECCD30 /* ButtonView.swift */; };
 		D3C4A2B127DB540200697E28 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4A2B027DB540200697E28 /* SettingsView.swift */; };
+		D3E0DF7227E225B700E6FC37 /* VrijwilligerDatum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0DF7127E225B700E6FC37 /* VrijwilligerDatum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		D36A8D3027D0FC28003AD26A /* SogetiTG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SogetiTG.xcdatamodel; sourceTree = "<group>"; };
 		D3B758B327DA2EA400ECCD30 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		D3C4A2B027DB540200697E28 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D3E0DF7127E225B700E6FC37 /* VrijwilligerDatum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrijwilligerDatum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D30BB9F327D79962000B34EE /* DonerenView.swift */,
 				D30BB9F527D79978000B34EE /* KindOpgevenView.swift */,
 				D30BB9F727D7998B000B34EE /* VrijwilligerOpgevenView.swift */,
+				D3E0DF7127E225B700E6FC37 /* VrijwilligerDatum.swift */,
 				D349C02727DF4F7900B7ED5A /* GeldView.swift */,
 				D349C02927DF4F9000B7ED5A /* SpeelgoedView.swift */,
 				D349C02D27E0A17000B7ED5A /* BedanktView.swift */,
@@ -207,6 +210,7 @@
 				D346E69227D619FB006F838D /* HomeView.swift in Sources */,
 				D30BB9F627D79978000B34EE /* KindOpgevenView.swift in Sources */,
 				D346E69027D619EC006F838D /* NewsView.swift in Sources */,
+				D3E0DF7227E225B700E6FC37 /* VrijwilligerDatum.swift in Sources */,
 				D349C02827DF4F7900B7ED5A /* GeldView.swift in Sources */,
 				D30BB9F227D79509000B34EE /* HelpView.swift in Sources */,
 				D346E69427D61A36006F838D /* ProfileView.swift in Sources */,
