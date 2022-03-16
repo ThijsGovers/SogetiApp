@@ -15,6 +15,7 @@ struct SpeelgoedView: View {
             ZStack{
                 Color("LightGreen")
                 VStack{
+                    Spacer()
                     Text("Wat wilt u doneren?")
                         .font(.title2)
                         .foregroundColor(Color("TextColor"))
@@ -24,8 +25,22 @@ struct SpeelgoedView: View {
                         .background(Color.white)
                         .cornerRadius(20)
                         .padding()
-                        
+                    Spacer()
                     
+                    Text("Foto toevoegen van het voorwerp")
+                        .font(.title2)
+                        .foregroundColor(Color("TextColor"))
+                    
+                    Image(systemName: "camera.fill")
+                        .font(.system(size: 50))
+                        .frame(width: 50, height: 50, alignment: .center)
+                        .padding(30)
+                        .foregroundColor(Color("AccentColor"))
+                        .background(Color("ColorWhite"))
+                        .cornerRadius(20)
+                    Spacer()
+                    VolgendeView(destination: BedanktView(), text: "Doneren")
+                    Spacer()
                 }
             }.navigationBarTitle("Doneren", displayMode: .inline)
         }.ignoresSafeArea()
