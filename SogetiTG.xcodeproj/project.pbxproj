@@ -27,6 +27,7 @@
 		D3B758B427DA2EA400ECCD30 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B758B327DA2EA400ECCD30 /* ButtonView.swift */; };
 		D3C4A2B127DB540200697E28 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4A2B027DB540200697E28 /* SettingsView.swift */; };
 		D3E0DF7227E225B700E6FC37 /* VrijwilligerDatum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0DF7127E225B700E6FC37 /* VrijwilligerDatum.swift */; };
+		D3E0DF7427E36C7600E6FC37 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0DF7327E36C7600E6FC37 /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		D3B758B327DA2EA400ECCD30 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		D3C4A2B027DB540200697E28 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D3E0DF7127E225B700E6FC37 /* VrijwilligerDatum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrijwilligerDatum.swift; sourceTree = "<group>"; };
+		D3E0DF7327E36C7600E6FC37 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				D36A8D2427D0FC25003AD26A /* SogetiTGApp.swift */,
 				D36A8D2627D0FC25003AD26A /* ContentView.swift */,
 				D3B758B327DA2EA400ECCD30 /* ButtonView.swift */,
+				D3E0DF7327E36C7600E6FC37 /* TextView.swift */,
 				D349C02B27DF705400B7ED5A /* VolgendeView.swift */,
 				D30BB9F027D78988000B34EE /* Doneren */,
 				D36A8D2827D0FC28003AD26A /* Assets.xcassets */,
@@ -218,6 +221,7 @@
 				D349C02C27DF705400B7ED5A /* VolgendeView.swift in Sources */,
 				D36A8D3127D0FC28003AD26A /* SogetiTG.xcdatamodeld in Sources */,
 				D30BB9F827D7998B000B34EE /* VrijwilligerOpgevenView.swift in Sources */,
+				D3E0DF7427E36C7600E6FC37 /* TextView.swift in Sources */,
 				D3C4A2B127DB540200697E28 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

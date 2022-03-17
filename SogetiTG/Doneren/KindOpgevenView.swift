@@ -21,10 +21,11 @@ struct KindOpgevenView: View {
                     Text("Naam van het kind")
                         .font(.title2)
                         .foregroundColor(Color("TextColor"))
-                    TextField("Voornaam en achternaam", text: $naamKind)
-                        .padding()
-                        .background(Color("ColorWhite"))
-                        .cornerRadius(20)
+                    TextView(text: "Voornaam en Achternaam")
+//                    TextField("Voornaam en achternaam", text: $naamKind)
+//                        .padding()
+//                        .background(Color("ColorWhite"))
+//                        .cornerRadius(20)
                         
                     
                     Text("Leeftijd van het kind")
