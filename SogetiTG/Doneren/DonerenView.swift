@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DonerenView: View {
     var body: some View {
-        NavigationView{
             ZStack{
                 Color("LightGreen")
                 
@@ -51,7 +50,6 @@ struct DonerenView: View {
                 }
                 
             }.navigationBarTitle("Doneren", displayMode: .inline)
-        }.ignoresSafeArea()
     }
 }
 

@@ -9,14 +9,12 @@ import SwiftUI
 
 struct VrijwilligerDatum: View {
     var body: some View {
-        NavigationView{
             ZStack{
                 Color("LightGreen")
                 
                 Text("Datum opgeven")
                 
             }.navigationBarTitle("Vrijwilliger opgeven", displayMode: .inline)
-        }.ignoresSafeArea()
     }
 }
 

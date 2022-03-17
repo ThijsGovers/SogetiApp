@@ -11,7 +11,6 @@ struct SpeelgoedView: View {
     @State private var speelgoed = ""
     
     var body: some View {
-        NavigationView{
             ZStack{
                 Color("LightGreen")
                 VStack{
@@ -43,7 +42,6 @@ struct SpeelgoedView: View {
                     Spacer()
                 }
             }.navigationBarTitle("Doneren", displayMode: .inline)
-        }.ignoresSafeArea()
     }
 }
 

@@ -12,7 +12,6 @@ struct VrijwilligerOpgevenView: View {
     @State private var vrijwilligerWoonplaats = ""
     
     var body: some View {
-        NavigationView{
             ZStack{
                 Color("LightGreen")
                 VStack{
@@ -42,7 +41,6 @@ struct VrijwilligerOpgevenView: View {
                     Spacer()
                 }
             }.navigationBarTitle("Vrijwilliger opgeven", displayMode: .inline)
-        }.ignoresSafeArea()
     }
 }
 

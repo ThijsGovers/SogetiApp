@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HelpView: View {
     var body: some View {
-        NavigationView{
             ZStack{
                 Color("LightGreen")
             
@@ -28,7 +27,7 @@ struct HelpView: View {
                     Spacer()
                 }
             }.navigationBarTitle("Help mee!", displayMode: .inline)
-        }.ignoresSafeArea()
+        
         
     }
 }

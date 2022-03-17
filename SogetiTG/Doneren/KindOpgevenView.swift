@@ -14,7 +14,6 @@ struct KindOpgevenView: View {
     @State private var adres2 = ""
     
     var body: some View {
-        NavigationView{
             ZStack{
                 Color("LightGreen")
                 
@@ -26,7 +25,7 @@ struct KindOpgevenView: View {
                         .padding()
                         .background(Color("ColorWhite"))
                         .cornerRadius(20)
-                        .padding()
+                        
                     
                     Text("Leeftijd van het kind")
                         .font(.title2)
@@ -66,10 +65,9 @@ struct KindOpgevenView: View {
                         .background(Color("ColorWhite"))
                         .cornerRadius(20)
                         .padding()
-                }
+                }.padding()
                 
             }.navigationBarTitle("Kind opgeven", displayMode: .inline)
-        }.ignoresSafeArea()
     }
 }
 

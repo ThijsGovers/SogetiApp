@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        Text("Moet nog gemaat worden")
+        Text("Moet nog gemaakt worden")
     }
 }
 

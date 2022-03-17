@@ -9,7 +9,6 @@ import SwiftUI
 
 struct BedanktView: View {
     var body: some View {
-        
             ZStack{
                 Color("LightGreen")
                 VStack{
@@ -22,8 +21,7 @@ struct BedanktView: View {
                     VolgendeView(destination: HomeView(), text: "Hoofdpagina")
                     Spacer()
                 }
-            
-        }.ignoresSafeArea()
+            }
     }
 }
 

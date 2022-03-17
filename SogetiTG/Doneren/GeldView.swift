@@ -11,7 +11,6 @@ struct GeldView: View {
     @State private var bedrag = ""
     
     var body: some View {
-        NavigationView{
             ZStack{
                 Color("LightGreen")
                 VStack{
@@ -36,7 +35,6 @@ struct GeldView: View {
                     VolgendeView(destination: BedanktView(), text: "Doneren")
                 }
             }.navigationBarTitle("Doneren", displayMode: .inline)
-        }.ignoresSafeArea()
     }
 }
 
