@@ -11,6 +11,12 @@ struct VrijwilligerOpgevenView: View {
     @State private var vrijwilligerNaam = ""
     @State private var vrijwilligerWoonplaats = ""
     
+    @State var cadeauOpslag: Bool = true
+    @State var cadeauInpakken: Bool = true
+    @State var cadeauVerjaardag: Bool = true
+    @State var cadeauSint: Bool = true
+    @State var cadeauKerst: Bool = true
+    
     var body: some View {
             ZStack{
                 Color("LightGreen")
@@ -25,11 +31,11 @@ struct VrijwilligerOpgevenView: View {
                         .cornerRadius(20)
                         .padding()
                     
-                    
+                    Spacer()
                     Text("Woonplaats van de vrijwilliger")
                         .font(.title2)
                         .foregroundColor(Color("TextColor"))
-                        .padding(.top, 50)
+                        
                     TextField("Woonplaats", text: $vrijwilligerWoonplaats)
                         .padding()
                         .background(Color("ColorWhite"))
@@ -37,8 +43,28 @@ struct VrijwilligerOpgevenView: View {
                         .padding()
                     
                     Spacer()
-                    VolgendeView(destination: VrijwilligerDatum(), text: "Volgende")
+                    VStack{
+                        Toggle(isOn: $cadeauOpslag) {
+                            Text("Cadeau opslag")
+                        }
+                        Toggle(isOn: $cadeauInpakken) {
+                            Text("Cadeaus inpakken")
+                        }
+                        Toggle(isOn: $cadeauVerjaardag) {
+                            Text("Cadeaus op verjaardag")
+                        }
+                        Toggle(isOn: $cadeauSint) {
+                            Text("Cadeaus op kerst")
+                        }
+                        Toggle(isOn: $cadeauKerst) {
+                            Text("Cadeaus op sinterklaas")
+                        }
+                    }.padding()
+                    
                     Spacer()
+                    VolgendeView(destination: VrijwilligerDatum(), text: "Volgende")
+                        .padding(.bottom, 50)
+                    
                 }
             }.navigationBarTitle("Vrijwilliger opgeven", displayMode: .inline)
     }

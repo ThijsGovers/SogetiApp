@@ -24,8 +24,6 @@ struct ProfileView: View {
                         TextField("Telefoon nummer", text: $telefoon)
                     }
                 }
-                
-                VolgendeView(destination: KindOpgevenView(), text: "Kind opgeven")
             }
         }.navigationBarTitle("Profiel")
     }
