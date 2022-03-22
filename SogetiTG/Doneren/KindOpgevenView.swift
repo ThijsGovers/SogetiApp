@@ -16,6 +16,9 @@ struct KindOpgevenView: View {
     @State private var verlanglijstje = ""
     @State private var topCadeau = ""
     
+    @State var man: Bool = false
+    @State var vrouw: Bool = false
+    
     var body: some View {
             ZStack{
                 Color("LightGreen")
@@ -42,9 +45,11 @@ struct KindOpgevenView: View {
                                 .background(Color("ColorWhite"))
                                 .cornerRadius(20)
                             
+                            
                             Text("Geslacht")
                                 .font(.title2)
                                 .foregroundColor(Color("TextColor"))
+                           
                             HStack{
                                 Image(systemName: "Circle.fill").foregroundColor(.white).font(.title2)
                                     .padding()
@@ -57,6 +62,7 @@ struct KindOpgevenView: View {
                                     .cornerRadius(20)
                                     .padding()
                             }
+                            
                             
                             Text("Woonplaats van het kind")
                                 .font(.title2)
