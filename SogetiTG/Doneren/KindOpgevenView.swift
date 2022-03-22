@@ -16,6 +16,8 @@ struct KindOpgevenView: View {
     @State private var verlanglijstje = ""
     @State private var topCadeau = ""
     
+    @State var verjaardag = Date()
+    
     @State var man: Bool = false
     @State var vrouw: Bool = false
     
@@ -40,10 +42,15 @@ struct KindOpgevenView: View {
                             Text("Leeftijd van het kind")
                                 .font(.title2)
                                 .foregroundColor(Color("TextColor"))
-                            TextField("Leeftijd", text: $leeftijdKind)
+                            DatePicker("Verjaardag", selection: $verjaardag, in: ...Date(), displayedComponents: .date)
                                 .padding()
                                 .background(Color("ColorWhite"))
+                                .foregroundColor(Color("TextColor"))
                                 .cornerRadius(20)
+//                            TextField("Leeftijd", text: $leeftijdKind)
+//                                .padding()
+//                                .background(Color("ColorWhite"))
+//                                .cornerRadius(20)
                             
                             
                             Text("Geslacht")
