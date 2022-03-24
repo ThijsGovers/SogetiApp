@@ -7,20 +7,28 @@
 
 import SwiftUI
 
-struct TextView<Label> where Label : View {
-//struct TextView: View {
+struct TextView : View {
     
-    @State private var textInput = ""
-    let text: String
+    let text: String?
+    let placeholder: String
+    let value: Binding<String>
     
     var body: some View {
-        TextField(text, text: $textInput)
-            .padding()
-            .background(Color("ColorWhite"))
-            .cornerRadius(20)
+        VStack{
+            if let text = text {
+                Text(text)
+                    .font(.title2)
+                    .foregroundColor(Color("TextColor"))
+                    .padding(.top, 50)
+            }
+            
+            TextField(placeholder, text: value)
+                .padding()
+                .background(Color("ColorWhite"))
+                .cornerRadius(20)
+        }
     }
 }
-
 //struct TextView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        TextView()

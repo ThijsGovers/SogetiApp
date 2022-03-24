@@ -29,6 +29,7 @@
 		D3E0DF7227E225B700E6FC37 /* VrijwilligerDatum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0DF7127E225B700E6FC37 /* VrijwilligerDatum.swift */; };
 		D3E0DF7427E36C7600E6FC37 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0DF7327E36C7600E6FC37 /* TextView.swift */; };
 		D3E40CCF27EB4CDB00C3AD4E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E40CCE27EB4CDB00C3AD4E /* UserData.swift */; };
+		D3E40CD127EC87D300C3AD4E /* GeslachtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E40CD027EC87D300C3AD4E /* GeslachtView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		D3E0DF7127E225B700E6FC37 /* VrijwilligerDatum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrijwilligerDatum.swift; sourceTree = "<group>"; };
 		D3E0DF7327E36C7600E6FC37 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		D3E40CCE27EB4CDB00C3AD4E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		D3E40CD027EC87D300C3AD4E /* GeslachtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeslachtView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				D346E68E27D61981006F838D /* Views */,
 				D36A8D2427D0FC25003AD26A /* SogetiTGApp.swift */,
+				D3E40CD027EC87D300C3AD4E /* GeslachtView.swift */,
 				D3E40CCE27EB4CDB00C3AD4E /* UserData.swift */,
 				D36A8D2627D0FC25003AD26A /* ContentView.swift */,
 				D3B758B327DA2EA400ECCD30 /* ButtonView.swift */,
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D36A8D2E27D0FC28003AD26A /* Persistence.swift in Sources */,
+				D3E40CD127EC87D300C3AD4E /* GeslachtView.swift in Sources */,
 				D36A8D2727D0FC25003AD26A /* ContentView.swift in Sources */,
 				D3B758B427DA2EA400ECCD30 /* ButtonView.swift in Sources */,
 				D36A8D2527D0FC25003AD26A /* SogetiTGApp.swift in Sources */,

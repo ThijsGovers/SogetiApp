@@ -18,8 +18,7 @@ struct KindOpgevenView: View {
     
     @State var verjaardag = Date()
     
-    @State var man: Bool = false
-    @State var vrouw: Bool = false
+    @State var geslacht = Gender.unspecified
     
     var body: some View {
             ZStack{
@@ -28,15 +27,7 @@ struct KindOpgevenView: View {
                 ScrollView{
                     VStack{
                         VStack{
-                            Text("Naam van het kind")
-                                .font(.title2)
-                                .foregroundColor(Color("TextColor"))
-                                .padding(.top, 50)
-        //                  TextView(text: "Voornaam en Achternaam")
-                            TextField("Voornaam en achternaam", text: $naamKind)
-                                .padding()
-                                .background(Color("ColorWhite"))
-                                .cornerRadius(20)
+                            TextView(text: "Naam van het kind", placeholder: "Voornaam en Achternaam", value: $naamKind)
                                 
                             
                             Text("Leeftijd van het kind")
@@ -52,36 +43,12 @@ struct KindOpgevenView: View {
 //                                .background(Color("ColorWhite"))
 //                                .cornerRadius(20)
                             
-                            
-                            Text("Geslacht")
-                                .font(.title2)
-                                .foregroundColor(Color("TextColor"))
-                           
-                            HStack{
-                                Image(systemName: "Circle.fill").foregroundColor(.white).font(.title2)
-                                    .padding()
-                                    .background(Color("ColorWhite"))
-                                    .cornerRadius(20)
-                                    .padding()
-                                Image(systemName: "Circle.fill").foregroundColor(.white).font(.title2)
-                                    .padding()
-                                    .background(Color("ColorWhite"))
-                                    .cornerRadius(20)
-                                    .padding()
-                            }
+                            GeslachtView(text: "Geslacht", value: $geslacht)
                             
                             
-                            Text("Woonplaats van het kind")
-                                .font(.title2)
-                                .foregroundColor(Color("TextColor"))
-                            TextField("Adres", text: $adres1)
-                                .padding()
-                                .background(Color("ColorWhite"))
-                                .cornerRadius(20)
-                            TextField("Eventueel tweede adres", text: $adres2)
-                                .padding()
-                                .background(Color("ColorWhite"))
-                                .cornerRadius(20)
+                            
+                            TextView(text: "Woonplaats van het kind", placeholder: "Andres", value: $adres1)
+                            TextView(text: nil, placeholder: "Eventueel tweede adres", value: $adres2)
                         }.padding()
                     }
                     
