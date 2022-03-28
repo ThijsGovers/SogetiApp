@@ -9,36 +9,36 @@ import Foundation
 import SwiftUI
 
 struct GeslachtView : View {
-    
+
     let text: String
     let value: Binding<Gender>
-    
+
     var body: some View {
         Text(text)
             .font(.title2)
             .foregroundColor(Color("TextColor"))
-       
+
         HStack{
             Button {
-                value = .male
+                value.wrappedValue = .male
             } label: {
                 VStack{
-                    Image(systemName: value == .male ? "circle.fill" : "circle")
+                    Image(systemName: value.wrappedValue == .male ? "circle.fill" : "circle")
                     Text("Man")
                 }
             }
 
-            
+
             Button {
-                value = .female
+                value.wrappedValue = .female
             } label: {
                 VStack{
-                    Image(systemName: value == .female ? "circle.fill" : "circle")
+                    Image(systemName: value.wrappedValue == .female ? "circle.fill" : "circle")
                     Text("Vrouw")
                 }
             }
-
         }
+
     }
 }
 
