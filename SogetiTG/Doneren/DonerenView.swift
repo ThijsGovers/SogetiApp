@@ -13,7 +13,6 @@ struct DonerenView: View {
                 Color("LightGreen")
                 
                 VStack{
-                    Spacer()
                     Text("Wat wilt u doneren?")
                         .font(.title2)
                         .foregroundColor(Color("TextColor"))
@@ -22,31 +21,41 @@ struct DonerenView: View {
                     HStack{
                         Spacer()
                         VStack{
-                            Image(systemName: "eurosign.circle")
-                                .font(.system(size: 50))
-                                .padding(30)
-                                .foregroundColor(Color("AccentColor"))
-                                .background(Color("ColorWhite"))
-                                .cornerRadius(20)
-                                Text("Geld")
+                            NavigationLink(
+                                destination: GeldView() ,
+                                label: {
+                                    VStack{
+                                        Image(systemName: "eurosign.circle")
+                                            .font(.system(size: 50))
+                                            .padding(30)
+                                            .foregroundColor(Color("AccentColor"))
+                                            .background(Color("ColorWhite"))
+                                            .cornerRadius(20)
+                                    }
+                                })
+                            Text("Geld")
                                 .foregroundColor(Color("TextColor"))
                         }
                         Spacer()
                         VStack{
-                            Image(systemName: "gift")
-                                .font(.system(size: 50))
-                                .padding(30)
-                                .foregroundColor(Color("AccentColor"))
-                                .background(Color("ColorWhite"))
-                                .cornerRadius(20)
+                            NavigationLink(
+                                destination: GeldView() ,
+                                label: {
+                                    VStack{
+                                        Image(systemName: "gift")
+                                            .font(.system(size: 50))
+                                            .padding(30)
+                                            .foregroundColor(Color("AccentColor"))
+                                            .background(Color("ColorWhite"))
+                                            .cornerRadius(20)
+                                    }
+                                })
                             Text("Speelgoed")
                                 .foregroundColor(Color("TextColor"))
                         }
                         Spacer()
                     }
-                    Spacer()
-                    VolgendeView(destination: GeldView(), text: "Volgende")
-                    Spacer()
+                    
                 }
                 
             }.navigationBarTitle("Doneren", displayMode: .inline)

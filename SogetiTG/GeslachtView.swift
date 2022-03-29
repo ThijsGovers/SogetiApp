@@ -34,7 +34,7 @@ struct GeslachtView : View {
                         Image(systemName: "person.circle")
                             .font(.system(size: 50))
                             .padding(30)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color("BoyBlue"))
                             .background(Color("ColorWhite"))
                             .cornerRadius(20)
                     }
@@ -60,7 +60,7 @@ struct GeslachtView : View {
                         Image(systemName: "person.circle")
                             .font(.system(size: 50))
                             .padding(30)
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color("GirlPink"))
                             .background(Color("ColorWhite"))
                             .cornerRadius(20)
                     }
