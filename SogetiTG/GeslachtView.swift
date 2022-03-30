@@ -19,6 +19,7 @@ struct GeslachtView : View {
             .foregroundColor(Color("TextColor"))
 
         HStack{
+            Spacer()
             Button {
                 value.wrappedValue = .male
             } label: {
@@ -44,7 +45,7 @@ struct GeslachtView : View {
                 }
             }
 
-
+            Spacer()
             Button {
                 value.wrappedValue = .female
             } label: {
@@ -69,6 +70,7 @@ struct GeslachtView : View {
                         .foregroundColor(Color("TextColor"))
                 }
             }
+            Spacer()
         }
 
     }
