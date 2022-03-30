@@ -39,7 +39,7 @@ struct DonerenView: View {
                         Spacer()
                         VStack{
                             NavigationLink(
-                                destination: GeldView() ,
+                                destination: SpeelgoedView() ,
                                 label: {
                                     VStack{
                                         Image(systemName: "gift")

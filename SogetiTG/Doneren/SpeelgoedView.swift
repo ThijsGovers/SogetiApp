@@ -24,8 +24,8 @@ struct SpeelgoedView: View {
                         .background(Color("ColorWhite"))
                         .cornerRadius(20)
                         .padding()
+                   
                     Spacer()
-                    
                     Text("Foto toevoegen van het voorwerp")
                         .font(.title2)
                         .foregroundColor(Color("TextColor"))

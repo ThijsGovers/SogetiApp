@@ -11,6 +11,7 @@
 		D30BB9F427D79962000B34EE /* DonerenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BB9F327D79962000B34EE /* DonerenView.swift */; };
 		D30BB9F627D79978000B34EE /* KindOpgevenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BB9F527D79978000B34EE /* KindOpgevenView.swift */; };
 		D30BB9F827D7998B000B34EE /* VrijwilligerOpgevenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BB9F727D7998B000B34EE /* VrijwilligerOpgevenView.swift */; };
+		D322524227F460F40089FAF6 /* OpgevenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D322524127F460F40089FAF6 /* OpgevenView.swift */; };
 		D346E69027D619EC006F838D /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E68F27D619EC006F838D /* NewsView.swift */; };
 		D346E69227D619FB006F838D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E69127D619FB006F838D /* HomeView.swift */; };
 		D346E69427D61A36006F838D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346E69327D61A36006F838D /* ProfileView.swift */; };
@@ -37,6 +38,7 @@
 		D30BB9F327D79962000B34EE /* DonerenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonerenView.swift; sourceTree = "<group>"; };
 		D30BB9F527D79978000B34EE /* KindOpgevenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindOpgevenView.swift; sourceTree = "<group>"; };
 		D30BB9F727D7998B000B34EE /* VrijwilligerOpgevenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrijwilligerOpgevenView.swift; sourceTree = "<group>"; };
+		D322524127F460F40089FAF6 /* OpgevenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpgevenView.swift; sourceTree = "<group>"; };
 		D346E68F27D619EC006F838D /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		D346E69127D619FB006F838D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D346E69327D61A36006F838D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				D349C02727DF4F7900B7ED5A /* GeldView.swift */,
 				D349C02927DF4F9000B7ED5A /* SpeelgoedView.swift */,
 				D349C02D27E0A17000B7ED5A /* BedanktView.swift */,
+				D322524127F460F40089FAF6 /* OpgevenView.swift */,
 			);
 			path = Doneren;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				D3E0DF7427E36C7600E6FC37 /* TextView.swift in Sources */,
 				D3E40CCF27EB4CDB00C3AD4E /* UserData.swift in Sources */,
 				D3C4A2B127DB540200697E28 /* SettingsView.swift in Sources */,
+				D322524227F460F40089FAF6 /* OpgevenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

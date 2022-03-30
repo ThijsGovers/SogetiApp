@@ -16,11 +16,11 @@ struct HomeView: View {
                 ButtonView(destination: HelpView(), text: "Ik wil helpen!")
             }.navigationBarTitle("App Naam")
             .toolbar{
-                Button {
-//                    NavigationLink(destination: HelpView())
-                } label: {
-                    Label("save", systemImage: "slider.horizontal.3")
-                }
+                NavigationLink(
+                    destination: SettingsView() ,
+                    label: {
+                        Image(systemName: "slider.horizontal.3")
+                    })
             }
         }.ignoresSafeArea()
             

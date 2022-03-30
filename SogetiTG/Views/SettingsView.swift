@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         Text("Moet nog gemaakt worden")
+            .navigationBarTitle("Settings", displayMode: .inline)
     }
 }
 

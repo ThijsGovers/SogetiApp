@@ -17,6 +17,7 @@ struct BedanktView: View {
                         .font(.largeTitle)
                         .foregroundColor(Color("TextColor"))
                         .padding(30)
+                        .multilineTextAlignment(.center)
                     Spacer()
                     VolgendeView(destination: HomeView(), text: "Hoofdpagina")
                     Spacer()

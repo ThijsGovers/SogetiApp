@@ -22,25 +22,12 @@ struct VrijwilligerOpgevenView: View {
                 Color("LightGreen")
                 VStack{
                     Spacer()
-                    Text("Naam van de vrijwilliger")
-                        .font(.title2)
-                        .foregroundColor(Color("TextColor"))
-                    TextField("Naam", text: $vrijwilligerNaam)
-                        .padding()
-                        .background(Color("ColorWhite"))
-                        .cornerRadius(20)
-                        .padding()
+                    TextView(text: "Naam van de vrijwilliger", placeholder: "Naam", value: $vrijwilligerNaam)
                     
-                    Spacer()
-                    Text("Woonplaats van de vrijwilliger")
-                        .font(.title2)
-                        .foregroundColor(Color("TextColor"))
-                        
-                    TextField("Woonplaats", text: $vrijwilligerWoonplaats)
-                        .padding()
-                        .background(Color("ColorWhite"))
-                        .cornerRadius(20)
-                        .padding()
+                    
+                    
+                    TextView(text: "Woonplaats van de vrijwilliger", placeholder: "Woonplaats", value: $vrijwilligerWoonplaats)
+                    
                     
                     Spacer()
                     VStack{
@@ -59,13 +46,13 @@ struct VrijwilligerOpgevenView: View {
                         Toggle(isOn: $cadeauKerst) {
                             Text("Cadeaus op sinterklaas")
                         }
-                    }.padding()
+                    }
                     
                     Spacer()
                     VolgendeView(destination: VrijwilligerDatum(), text: "Volgende")
                         .padding(.bottom, 50)
                     
-                }
+                }.padding()
             }.navigationBarTitle("Vrijwilliger opgeven", displayMode: .inline)
     }
 }

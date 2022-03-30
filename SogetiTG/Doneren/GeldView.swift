@@ -14,6 +14,7 @@ struct GeldView: View {
             ZStack{
                 Color("LightGreen")
                 VStack{
+                    Spacer()
                     Text("Hoeveel wilt u doneren?")
                         .font(.title2)
                         .foregroundColor(Color("TextColor"))
@@ -31,8 +32,9 @@ struct GeldView: View {
                                 .cornerRadius(20)
                             Spacer()
                         }.padding(.horizontal, 20)
-                    
+                    Spacer()
                     VolgendeView(destination: BedanktView(), text: "Doneren")
+                    Spacer()
                 }
             }.navigationBarTitle("Doneren", displayMode: .inline)
     }

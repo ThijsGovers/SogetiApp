@@ -25,12 +25,13 @@ struct KindOpgevenView: View {
                 Color("LightGreen")
                 
                 ScrollView{
-                    VStack{
                         VStack{
                             TextView(text: "Naam van het kind", placeholder: "Voornaam en Achternaam", value: $naamKind)
+                                .padding(.bottom, 30)
+                                .padding(.top, 20)
                                 
                             
-                            Text("Leeftijd van het kind")
+                            Text("Geboortedatum van het kind")
                                 .font(.title2)
                                 .foregroundColor(Color("TextColor"))
                             DatePicker("Verjaardag", selection: $verjaardag, in: ...Date(), displayedComponents: .date)
@@ -38,47 +39,26 @@ struct KindOpgevenView: View {
                                 .background(Color("ColorWhite"))
                                 .foregroundColor(Color("TextColor"))
                                 .cornerRadius(20)
-//                            TextField("Leeftijd", text: $leeftijdKind)
-//                                .padding()
-//                                .background(Color("ColorWhite"))
-//                                .cornerRadius(20)
+                                .padding(.bottom, 30)
                             
                             GeslachtView(text: "Geslacht", value: $geslacht)
                             
-                            
-                            
                             TextView(text: "Woonplaats van het kind", placeholder: "Andres", value: $adres1)
+                            
                             TextView(text: nil, placeholder: "Eventueel tweede adres", value: $adres2)
                         }.padding()
-                    }
                     
-                    VStack{
-                        Text("Hobby's van het kind")
-                            .font(.title2)
-                            .foregroundColor(Color("TextColor"))
-                        TextField("Hobby's", text: $hobbys)
-                            .padding()
-                            .background(Color("ColorWhite"))
-                            .cornerRadius(20)
-                        Text("Verlanglijstje van het kind")
-                            .font(.title2)
-                            .foregroundColor(Color("TextColor"))
-                        TextField("Verlanglijstje", text: $verlanglijstje)
-                            .padding()
-                            .background(Color("ColorWhite"))
-                            .cornerRadius(20)
-                        Text("Topcadeau")
-                            .font(.title2)
-                            .foregroundColor(Color("TextColor"))
-                        TextField("Top Cadeau", text: $topCadeau)
-                            .padding()
-                            .background(Color("ColorWhite"))
-                            .cornerRadius(20)
+                        VStack{
+                            TextView(text: "Hobby's van het kind", placeholder: "Hobby's", value: $hobbys)
+                       
+                            TextView(text: "Verlanglijstje van het kind", placeholder: "Verlanglijstje", value: $verlanglijstje)
                         
-                        VolgendeView(destination: BedanktView(), text: "Opgeven")
-                            .padding(.top, 30)
-                            .padding(.bottom, 30)
-                    }.padding()
+                            TextView(text: "Topcadeau", placeholder: "Top Cadeau", value: $topCadeau)
+                        
+                            VolgendeView(destination: OpgevenView(), text: "Opgeven")
+                                .padding(.top, 30)
+                                .padding(.bottom, 30)
+                        }.padding()
                 }
             }.navigationBarTitle("Kind opgeven", displayMode: .inline)
     }

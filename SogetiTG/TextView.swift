@@ -19,7 +19,7 @@ struct TextView : View {
                 Text(text)
                     .font(.title2)
                     .foregroundColor(Color("TextColor"))
-                    .padding(.top, 50)
+                    .padding(.top, 30)
             }
             
             TextField(placeholder, text: value)

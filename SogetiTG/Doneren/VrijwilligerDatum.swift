@@ -12,8 +12,13 @@ struct VrijwilligerDatum: View {
             ZStack{
                 Color("LightGreen")
                 
-                Text("Datum opgeven")
-                
+                VStack{
+                    Spacer()
+                    Text("Datum opgeven")
+                    Spacer()
+                    VolgendeView(destination: OpgevenView(), text: "Opgeven")
+                    Spacer()
+                }
             }.navigationBarTitle("Vrijwilliger opgeven", displayMode: .inline)
     }
 }
