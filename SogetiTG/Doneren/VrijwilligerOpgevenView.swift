@@ -8,42 +8,35 @@
 import SwiftUI
 
 struct VrijwilligerOpgevenView: View {
-    @State private var vrijwilligerNaam = ""
-    @State private var vrijwilligerWoonplaats = ""
-    
-    @State var cadeauOpslag: Bool = true
-    @State var cadeauInpakken: Bool = true
-    @State var cadeauVerjaardag: Bool = true
-    @State var cadeauSint: Bool = true
-    @State var cadeauKerst: Bool = true
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
             ZStack{
                 Color("LightGreen")
                 VStack{
                     Spacer()
-                    TextView(text: "Naam van de vrijwilliger", placeholder: "Naam", value: $vrijwilligerNaam)
+                    TextView(text: "Naam van de vrijwilliger", placeholder: "Naam", value: $userData.vrijwilligerNaam)
                     
                     
                     
-                    TextView(text: "Woonplaats van de vrijwilliger", placeholder: "Woonplaats", value: $vrijwilligerWoonplaats)
+                    TextView(text: "Woonplaats van de vrijwilliger", placeholder: "Woonplaats", value: $userData.vrijwilligerWoonplaats)
                     
                     
                     Spacer()
                     VStack{
-                        Toggle(isOn: $cadeauOpslag) {
+                        Toggle(isOn: $userData.cadeauOpslag) {
                             Text("Cadeau opslag")
                         }
-                        Toggle(isOn: $cadeauInpakken) {
+                        Toggle(isOn: $userData.cadeauInpakken) {
                             Text("Cadeaus inpakken")
                         }
-                        Toggle(isOn: $cadeauVerjaardag) {
+                        Toggle(isOn: $userData.cadeauVerjaardag) {
                             Text("Cadeaus op verjaardag")
                         }
-                        Toggle(isOn: $cadeauSint) {
+                        Toggle(isOn: $userData.cadeauSint) {
                             Text("Cadeaus op kerst")
                         }
-                        Toggle(isOn: $cadeauKerst) {
+                        Toggle(isOn: $userData.cadeauKerst) {
                             Text("Cadeaus op sinterklaas")
                         }
                     }

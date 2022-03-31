@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var userData = UserData()
+    
     var body: some View {
         NavigationView{
             ZStack{
                 Color("LightGreen")
             
                 ButtonView(destination: HelpView(), text: "Ik wil helpen!")
-            }.navigationBarTitle("App Naam")
+            }
+            
+            .navigationBarTitle("App Naam")
             .toolbar{
                 NavigationLink(
                     destination: SettingsView() ,
@@ -22,7 +26,9 @@ struct HomeView: View {
                         Image(systemName: "slider.horizontal.3")
                     })
             }
-        }.ignoresSafeArea()
+        }
+        .environmentObject(userData)
+        .ignoresSafeArea()
             
     }
 }

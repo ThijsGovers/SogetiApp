@@ -14,10 +14,30 @@ enum Gender: String {
     case unspecified = "n.v.t"
 }
 
-//class UserData: ObservableObject  {
-//    @Published var gender: String {
-//        didSet {
-//            UserDefaults.standard.set(gender, forKey: "gender")
-//        }
-//    }
-//}
+class UserData: ObservableObject  {
+//Kind
+    @Published var naamKind = ""
+    @Published var leeftijdKind = ""
+    @Published var adres1 = ""
+    @Published var adres2 = ""
+    @Published var hobbys = ""
+    @Published var verlanglijstje = ""
+    @Published var topCadeau = ""
+    
+    @Published var verjaardag = Date()
+    
+    @Published var geslacht = Gender.unspecified
+    
+//Vrijwilliger
+    @Published var vrijwilligerNaam = ""
+    @Published var vrijwilligerWoonplaats = ""
+    
+    @Published var cadeauOpslag: Bool = false
+    @Published var cadeauInpakken: Bool = true
+    @Published var cadeauVerjaardag: Bool = true
+    @Published var cadeauSint: Bool = true
+    @Published var cadeauKerst: Bool = true
+    
+//Doneren
+    
+}

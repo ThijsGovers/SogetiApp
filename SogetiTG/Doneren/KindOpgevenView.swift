@@ -8,17 +8,7 @@
 import SwiftUI
 
 struct KindOpgevenView: View {
-    @State private var naamKind = ""
-    @State private var leeftijdKind = ""
-    @State private var adres1 = ""
-    @State private var adres2 = ""
-    @State private var hobbys = ""
-    @State private var verlanglijstje = ""
-    @State private var topCadeau = ""
-    
-    @State var verjaardag = Date()
-    
-    @State var geslacht = Gender.unspecified
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
             ZStack{
@@ -26,7 +16,7 @@ struct KindOpgevenView: View {
                 
                 ScrollView{
                         VStack{
-                            TextView(text: "Naam van het kind", placeholder: "Voornaam en Achternaam", value: $naamKind)
+                            TextView(text: "Naam van het kind", placeholder: "Voornaam en Achternaam", value: $userData.naamKind)
                                 .padding(.bottom, 30)
                                 .padding(.top, 20)
                                 
@@ -34,26 +24,26 @@ struct KindOpgevenView: View {
                             Text("Geboortedatum van het kind")
                                 .font(.title2)
                                 .foregroundColor(Color("TextColor"))
-                            DatePicker("Verjaardag", selection: $verjaardag, in: ...Date(), displayedComponents: .date)
+                            DatePicker("Verjaardag", selection: $userData.verjaardag, in: ...Date(), displayedComponents: .date)
                                 .padding()
                                 .background(Color("ColorWhite"))
                                 .foregroundColor(Color("TextColor"))
                                 .cornerRadius(20)
                                 .padding(.bottom, 30)
                             
-                            GeslachtView(text: "Geslacht", value: $geslacht)
+                            GeslachtView(text: "Geslacht", value: $userData.geslacht)
                             
-                            TextView(text: "Woonplaats van het kind", placeholder: "Andres", value: $adres1)
+                            TextView(text: "Woonplaats van het kind", placeholder: "Andres", value: $userData.adres1)
                             
-                            TextView(text: nil, placeholder: "Eventueel tweede adres", value: $adres2)
+                            TextView(text: nil, placeholder: "Eventueel tweede adres", value: $userData.adres2)
                         }.padding()
                     
                         VStack{
-                            TextView(text: "Hobby's van het kind", placeholder: "Hobby's", value: $hobbys)
+                            TextView(text: "Hobby's van het kind", placeholder: "Hobby's", value: $userData.hobbys)
                        
-                            TextView(text: "Verlanglijstje van het kind", placeholder: "Verlanglijstje", value: $verlanglijstje)
+                            TextView(text: "Verlanglijstje van het kind", placeholder: "Verlanglijstje", value: $userData.verlanglijstje)
                         
-                            TextView(text: "Topcadeau", placeholder: "Top Cadeau", value: $topCadeau)
+                            TextView(text: "Topcadeau", placeholder: "Top Cadeau", value: $userData.topCadeau)
                         
                             VolgendeView(destination: OpgevenView(), text: "Opgeven")
                                 .padding(.top, 30)
