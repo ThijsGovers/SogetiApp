@@ -8,6 +8,22 @@
 import SwiftUI
 import Foundation
 
+struct Profiel : Codable, Identifiable {
+    var id = UUID().uuidString
+    var naamKind = ""
+}
+
+//class ProfielNaam : ObservableObject {
+//    let encoder = JSONEncoder()
+//    didSet{
+//        if let encoded = try?
+//            encoder.encode(tasks) {
+//            UserDefaults.standard.set(encoded,
+//                            forKey: "items")
+//        }
+//    }
+//}
+
 enum Gender: String {
     case male = "man"
     case female = "vrouw"
@@ -39,5 +55,8 @@ class UserData: ObservableObject  {
     @Published var cadeauKerst: Bool = true
     
 //Doneren
+    
+    
+//Profiel
     
 }

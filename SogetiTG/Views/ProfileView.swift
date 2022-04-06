@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @State private var naam = ""
+    @ObservedObject var userData = UserData()
+    @State var naam = ""
+    
     @State private var woonplaats = ""
     @State private var email = ""
     @State private var telefoon = ""

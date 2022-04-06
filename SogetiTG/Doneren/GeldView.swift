@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GeldView: View {
-    @State private var bedrag = ""
+    @State private var bedrag = 10.0
     
     var body: some View {
             ZStack{
@@ -20,18 +20,17 @@ struct GeldView: View {
                         .foregroundColor(Color("TextColor"))
                         .padding(.bottom, 50)
                     
-                        HStack{
+                        
                             Spacer()
-                            Text("€").font(.largeTitle)
-                                .foregroundColor(Color("TextColor"))
-                            TextField("Bedrag", text: $bedrag)
+                            TextField("Bedrag", value: $bedrag, format: .currency(code: Locale.current.currencyCode ?? "EU"))
+                                .keyboardType(.decimalPad)
                                 .frame(width: 100, height: 100, alignment: .center)
                                 .multilineTextAlignment(TextAlignment.center)
                                 .padding()
                                 .background(Color.white)
                                 .cornerRadius(20)
                             Spacer()
-                        }.padding(.horizontal, 20)
+                        
                     Spacer()
                     VolgendeView(destination: BedanktView(), text: "Doneren")
                     Spacer()
