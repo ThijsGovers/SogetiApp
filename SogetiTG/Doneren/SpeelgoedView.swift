@@ -38,7 +38,7 @@ struct SpeelgoedView: View {
                         .background(Color("ColorWhite"))
                         .cornerRadius(20)
                     Spacer()
-                    VolgendeView(destination: BedanktView(), text: "Doneren")
+                    VolgendeView(destination: BedanktGeldView(), text: "Doneren")
                     Spacer()
                 }
             }.navigationBarTitle("Doneren", displayMode: .inline)

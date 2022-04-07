@@ -8,21 +8,7 @@
 import SwiftUI
 import Foundation
 
-struct Profiel : Codable, Identifiable {
-    var id = UUID().uuidString
-    var naamKind = ""
-}
 
-//class ProfielNaam : ObservableObject {
-//    let encoder = JSONEncoder()
-//    didSet{
-//        if let encoded = try?
-//            encoder.encode(tasks) {
-//            UserDefaults.standard.set(encoded,
-//                            forKey: "items")
-//        }
-//    }
-//}
 
 enum Gender: String {
     case male = "man"
@@ -32,30 +18,30 @@ enum Gender: String {
 
 class UserData: ObservableObject  {
 //Kind
-    @Published var naamKind = ""
-    @Published var leeftijdKind = ""
-    @Published var adres1 = ""
-    @Published var adres2 = ""
-    @Published var hobbys = ""
-    @Published var verlanglijstje = ""
-    @Published var topCadeau = ""
+    @AppStorage ("naamKind") var naamKind = ""
+    @AppStorage ("leeftijdKind") var leeftijdKind = ""
+    @AppStorage ("adres1") var adres1 = ""
+    @AppStorage ("adres2") var adres2 = ""
+    @AppStorage ("hobbys") var hobbys = ""
+    @AppStorage ("verlanglijstje") var verlanglijstje = ""
+    @AppStorage ("topCadeau") var topCadeau = ""
     
     @Published var verjaardag = Date()
     
-    @Published var geslacht = Gender.unspecified
+    @AppStorage ("geslacht") var geslacht = Gender.unspecified
     
 //Vrijwilliger
-    @Published var vrijwilligerNaam = ""
-    @Published var vrijwilligerWoonplaats = ""
+    @AppStorage ("vrijwilligerNaam") var vrijwilligerNaam = ""
+    @AppStorage ("vrijwilligerWoonplaats") var vrijwilligerWoonplaats = ""
     
-    @Published var cadeauOpslag: Bool = false
-    @Published var cadeauInpakken: Bool = true
-    @Published var cadeauVerjaardag: Bool = true
-    @Published var cadeauSint: Bool = true
-    @Published var cadeauKerst: Bool = true
+    @AppStorage ("cadeauOpslag") var cadeauOpslag: Bool = true
+    @AppStorage ("cadeauInpakken") var cadeauInpakken: Bool = true
+    @AppStorage ("cadeauVerjaardag") var cadeauVerjaardag: Bool = true
+    @AppStorage ("cadeauSint") var cadeauSint: Bool = true
+    @AppStorage ("cadeauKerst") var cadeauKerst: Bool = true
     
 //Doneren
-    
+    @Published var bedrag = 10.0
     
 //Profiel
     

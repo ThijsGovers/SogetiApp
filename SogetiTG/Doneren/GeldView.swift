@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GeldView: View {
-    @State private var bedrag = 10.0
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
             ZStack{
@@ -22,7 +22,7 @@ struct GeldView: View {
                     
                         
                             Spacer()
-                            TextField("Bedrag", value: $bedrag, format: .currency(code: Locale.current.currencyCode ?? "EU"))
+                    TextField("Bedrag", value: $userData.bedrag, format: .currency(code: Locale.current.currencyCode ?? "EU"))
                                 .keyboardType(.decimalPad)
                                 .frame(width: 100, height: 100, alignment: .center)
                                 .multilineTextAlignment(TextAlignment.center)
@@ -32,7 +32,7 @@ struct GeldView: View {
                             Spacer()
                         
                     Spacer()
-                    VolgendeView(destination: BedanktView(), text: "Doneren")
+                    VolgendeView(destination: BedanktGeldView(), text: "Doneren")
                     Spacer()
                 }
             }.navigationBarTitle("Doneren", displayMode: .inline)
