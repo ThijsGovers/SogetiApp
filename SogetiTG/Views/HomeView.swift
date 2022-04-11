@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var userData = UserData()
     
+//navview    @EnvironmentObject var appState: AppState
+    
     var body: some View {
         NavigationView{
             ZStack{
@@ -29,7 +31,14 @@ struct HomeView: View {
         }
         .environmentObject(userData)
         .ignoresSafeArea()
-            
+//navview
+//        .onReceive(self.appState.$moveToRoot) { moveToRoot in
+//                        if moveToRoot {
+//                            print("Move to dashboard: \(moveToRoot)")
+//                            //self.isView1Active = false
+//                            self.appState.moveToRoot = false
+//                        }
+//                    }
     }
 }
 

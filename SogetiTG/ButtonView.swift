@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ButtonView<Destination>: View where Destination: View {
+//navview    @EnvironmentObject var appState: AppState
     let destination: Destination
     let text: String
     
@@ -22,6 +23,7 @@ struct ButtonView<Destination>: View where Destination: View {
             .background(Color("ColorWhite"))
             .cornerRadius(20)
         }.padding(.horizontal, 40)
+//navview .isDetailLink(false)
     }
 }
 
