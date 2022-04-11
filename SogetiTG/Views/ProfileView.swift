@@ -9,21 +9,16 @@ import SwiftUI
 
 struct ProfileView: View {
     @ObservedObject var userData = UserData()
-    @State var naam = ""
-    
-    @State private var woonplaats = ""
-    @State private var email = ""
-    @State private var telefoon = ""
     
     var body: some View {
         NavigationView{
             VStack{
                 Form{
                     Section(header: Text("Gegevens")){
-                        TextField("Naam", text: $naam)
-                        TextField("Woonplaats", text: $woonplaats)
-                        TextField("E-mail", text: $email)
-                        TextField("Telefoon nummer", text: $telefoon)
+                        TextField("Naam", text: $userData.naam)
+                        TextField("Woonplaats", text: $userData.woonplaats)
+                        TextField("E-mail", text: $userData.email)
+                        TextField("Telefoon nummer", text: $userData.telefoon)
                     }
                 }
             }

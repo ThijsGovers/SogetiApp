@@ -44,5 +44,8 @@ class UserData: ObservableObject  {
     @Published var bedrag = 10.0
     
 //Profiel
-    
+    @AppStorage ("naam") var naam = ""
+    @AppStorage ("woonplaats") var woonplaats = ""
+    @AppStorage ("email") var email = ""
+    @AppStorage ("telefoon") var telefoon = ""
 }
