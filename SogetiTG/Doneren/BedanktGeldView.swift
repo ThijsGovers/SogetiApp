@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BedanktGeldView: View {
     @EnvironmentObject var userData: UserData
-    //navview @EnvironmentObject var appState: AppState
+    
     
     var body: some View {
             ZStack{
@@ -22,14 +22,14 @@ struct BedanktGeldView: View {
                         .padding(30)
                         .multilineTextAlignment(.center)
                     Spacer()
-                    VolgendeView(destination: HomeView(), text: "Hoofdpagina")
-//navview
-//                    Button(action: {
-//                                   self.appState.moveToRoot = true
-//                               }) {
-//                                   Text("Hoofdpagina")
-//                                   .font(.headline)
-//                               }
+                        
+
+                    Button(action: {
+                        userData.isActive = false
+                               }) {
+                                   Text("Hoofdpagina")
+                                   .font(.headline)
+                               }
                     Spacer()
                 }
             }

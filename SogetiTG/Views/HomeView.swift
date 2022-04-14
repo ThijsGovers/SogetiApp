@@ -9,15 +9,14 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var userData = UserData()
-    
-//navview    @EnvironmentObject var appState: AppState
+
     
     var body: some View {
         NavigationView{
             ZStack{
                 Color("LightGreen")
-            
-                ButtonView(destination: HelpView(), text: "Ik wil helpen!")
+            //
+                ButtonView2(destination: HelpView(), isActive: $userData.isActive, text: "Ik wil helpen!")
             }
             
             .navigationBarTitle("App Naam")
@@ -31,14 +30,7 @@ struct HomeView: View {
         }
         .environmentObject(userData)
         .ignoresSafeArea()
-//navview
-//        .onReceive(self.appState.$moveToRoot) { moveToRoot in
-//                        if moveToRoot {
-//                            print("Move to dashboard: \(moveToRoot)")
-//                            //self.isView1Active = false
-//                            self.appState.moveToRoot = false
-//                        }
-//                    }
+        
     }
 }
 

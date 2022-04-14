@@ -48,4 +48,8 @@ class UserData: ObservableObject  {
     @AppStorage ("woonplaats") var woonplaats = ""
     @AppStorage ("email") var email = ""
     @AppStorage ("telefoon") var telefoon = ""
+    
+    @Published var isActive = false
 }
+
+

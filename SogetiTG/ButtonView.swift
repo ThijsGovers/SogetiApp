@@ -32,3 +32,32 @@ struct ButtonView<Destination>: View where Destination: View {
 //        ButtonView()
 //    }
 //}
+
+
+
+struct ButtonView2<Destination>: View where Destination: View {
+//navview    @EnvironmentObject var appState: AppState
+    let destination: Destination
+    let isActive: Binding <Bool>
+    let text: String
+    
+    var body: some View {
+        NavigationLink(destination: destination, isActive: isActive) {
+            HStack(alignment: .center, spacing: 0) {
+                Spacer()
+                Text(text)
+                Spacer()
+            }.padding()
+            .foregroundColor(Color("TextColor"))
+            .background(Color("ColorWhite"))
+            .cornerRadius(20)
+        }.padding(.horizontal, 40)
+//navview .isDetailLink(false)
+    }
+}
+
+//struct ButtonView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ButtonView()
+//    }
+//}
