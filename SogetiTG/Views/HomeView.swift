@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var userData = UserData()
-
     
     var body: some View {
         NavigationView{

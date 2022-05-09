@@ -25,7 +25,6 @@
 		D36A8D2C27D0FC28003AD26A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36A8D2B27D0FC28003AD26A /* Preview Assets.xcassets */; };
 		D36A8D2E27D0FC28003AD26A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A8D2D27D0FC28003AD26A /* Persistence.swift */; };
 		D36A8D3127D0FC28003AD26A /* SogetiTG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D36A8D2F27D0FC28003AD26A /* SogetiTG.xcdatamodeld */; };
-		D397CF9728082CC40016944C /* activeNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = D397CF9628082CC30016944C /* activeNav.swift */; };
 		D397CF9928082E830016944C /* Button2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D397CF9828082E830016944C /* Button2View.swift */; };
 		D3B758B427DA2EA400ECCD30 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B758B327DA2EA400ECCD30 /* ButtonView.swift */; };
 		D3C4A2B127DB540200697E28 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4A2B027DB540200697E28 /* SettingsView.swift */; };
@@ -55,7 +54,6 @@
 		D36A8D2B27D0FC28003AD26A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D36A8D2D27D0FC28003AD26A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D36A8D3027D0FC28003AD26A /* SogetiTG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SogetiTG.xcdatamodel; sourceTree = "<group>"; };
-		D397CF9628082CC30016944C /* activeNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activeNav.swift; sourceTree = "<group>"; };
 		D397CF9828082E830016944C /* Button2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button2View.swift; sourceTree = "<group>"; };
 		D3B758B327DA2EA400ECCD30 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		D3C4A2B027DB540200697E28 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				D36A8D2427D0FC25003AD26A /* SogetiTGApp.swift */,
 				D3E40CD027EC87D300C3AD4E /* GeslachtView.swift */,
 				D3E40CCE27EB4CDB00C3AD4E /* UserData.swift */,
-				D397CF9628082CC30016944C /* activeNav.swift */,
 				D36A8D2627D0FC25003AD26A /* ContentView.swift */,
 				D3B758B327DA2EA400ECCD30 /* ButtonView.swift */,
 				D397CF9828082E830016944C /* Button2View.swift */,
@@ -238,7 +235,6 @@
 				D349C02C27DF705400B7ED5A /* VolgendeView.swift in Sources */,
 				D36A8D3127D0FC28003AD26A /* SogetiTG.xcdatamodeld in Sources */,
 				D30BB9F827D7998B000B34EE /* VrijwilligerOpgevenView.swift in Sources */,
-				D397CF9728082CC40016944C /* activeNav.swift in Sources */,
 				D3E0DF7427E36C7600E6FC37 /* TextView.swift in Sources */,
 				D3E40CCF27EB4CDB00C3AD4E /* UserData.swift in Sources */,
 				D3C4A2B127DB540200697E28 /* SettingsView.swift in Sources */,
