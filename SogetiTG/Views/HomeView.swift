@@ -14,7 +14,7 @@ struct HomeView: View {
         NavigationView{
             ZStack{
                 Color("LightGreen")
-            //
+            
                 ButtonView2(destination: HelpView(), isActive: $userData.isActive, text: "Ik wil helpen!")
             }
             
